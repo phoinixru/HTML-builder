@@ -25,7 +25,7 @@ process.on('SIGINT', () => {
   process.exit(0);
 });
 
-process.on('exit', (code) => {
+process.on('exit', () => {
   rl.close();
   writableStream.close();
 

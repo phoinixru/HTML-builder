@@ -23,7 +23,7 @@ async function copyDir(from, to) {
 }
 
 rm(dirCopyPath, { recursive: true, force: true })
-.catch(console.log)
-.finally(() => {
-  copyDir(dirPath, dirCopyPath);
-});
+  .catch(console.log)
+  .finally(() => {
+    copyDir(dirPath, dirCopyPath);
+  });

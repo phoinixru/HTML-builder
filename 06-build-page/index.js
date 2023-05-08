@@ -94,7 +94,7 @@ async function processTemplate(templateFile, componentsFolder, destFile) {
   });
 
   const outputContent = names.reduce((output, name) => {
-    return output.replaceAll(`{{${name}}}`, components[name] || '')
+    return output.replaceAll(`{{${name}}}`, components[name] || '');
   }, template);
 
 

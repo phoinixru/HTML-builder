@@ -25,7 +25,7 @@ const listFiles = async (dirPath) => {
       console.log(`${name} - ${ext.slice(1)} - ${fileSize}`);
     });
   }
-}
+};
 
 
 fs.opendir(secretFolderPath, (err) => {
